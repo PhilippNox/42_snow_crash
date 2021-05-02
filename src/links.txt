@@ -1,0 +1,3 @@
+pjc: https://projects.intra.42.fr/projects/42cursus-snow-crash
+pdf: https://cdn.intra.42.fr/pdf/pdf/19578/en.subject.pdf
+vid: https://elearning.intra.42.fr/notions/127/subnotions/465/videos/404

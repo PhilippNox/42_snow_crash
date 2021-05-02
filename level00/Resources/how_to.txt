@@ -1,0 +1,10 @@
+cd /
+find . -user flag00 2>/dev/null
+cat ./usr/sbin/john
+  cdiiddwpgswtgt
+https://www.dcode.fr/chiffre-cesar
+  nottoohardhere
+su flag00
+nottoohardhere
+getflag
+Check flag.Here is your token : x24ti5gi3x0ol2eh4esiuxias
