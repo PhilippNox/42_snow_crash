@@ -1,0 +1,11 @@
+ls
+  level02.pcap
+
+tcpdump -qns 0 -X -r level02.pcap
+(tshark -r level02.pcap -V)
+
+====
+
+scp -P 4242 level02@192.168.0.16:level02.pcap ~/
+wireshark and ascii
+  ft_waNDReL0L

