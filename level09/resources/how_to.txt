@@ -1,0 +1,10 @@
+./level09 "aaaaa"
+
+xxd -p token | sed 's/../& /g'
+xxd -p token | sed 's/../&_/g' | xargs python -c "import sys;print(sys.argv[1])"
+xxd -p token | sed 's/../&_/g' | xargs python -c "import sys;print(''.join([chr(int(el, 16) - idx) for idx, el in enumerate(sys.argv[1].split('_')[:-2])]))"
+
+========
+
+xxd -p token | sed 's/../&_/g' | xargs python -c "import sys;print(''.join([chr(int(el, 16) - idx) for idx, el in enumerate(sys.argv[1].split('_')[:-2])]))"
+su flag09 -c getflag

