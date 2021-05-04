@@ -1,0 +1,22 @@
+🔻 Hack
+⬇️ cat /etc/passwd
+⬇️ gdb getflag
+⬇️ (gdb) disass main
+⬇️ (gdb) set disassemble-next-line on
+⬇️ (gdb) b *0x08048946 ℹ️ <+0>
+⬇️ (gdb) b *0x0804898e ℹ️ <+72> line after ptrace
+⬇️ (gdb) b *0x08048b02 ℹ️ <+444> line after getuid
+⬇️ (gdb) run
+
+⬇️ (gdb) print $eax
+
+⬇️ (gdb) next
+⬇️ (gdb) print $eax
+⬇️ (gdb) set $eax = 0
+
+⬇️ (gdb) next
+⬇️ (gdb) print $eax
+⬇️ (gdb) set $eax = 3014
+
+⬇️ (gdb) next
+👉 7QiHafiNa3HVozsaXkawuYrTstxbpABHD8CPnHJ

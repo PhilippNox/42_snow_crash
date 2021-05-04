@@ -1,0 +1,9 @@
+🔻 Hack
+⬇️ ltrace ./level13
+⬇️ gdb level13
+⬇️ (gdb) disass main
+⬇️ (gdb) b *0x0804859a
+⬇️ (gdb) run
+⬇️ (gdb) disass main
+⬇️ (gdb) jump *0x080485cb
+👉 your token is 2A31L79asukciNyi8uppkEuSx
