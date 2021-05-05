@@ -1,9 +1,12 @@
 🔻 Hack
 ⬇️ ltrace ./level13
 ⬇️ gdb level13
+⬇️ (gdb) set disassemble-next-line on
 ⬇️ (gdb) disass main
-⬇️ (gdb) b *0x0804859a
+⬇️ (gdb) b *0x0804859a ℹ️ <+14> line with cmp (compare)
 ⬇️ (gdb) run
 ⬇️ (gdb) disass main
-⬇️ (gdb) jump *0x080485cb
+⬇️ (gdb) set $eax = 0x1092
+⬇️ (gdb) next
+⬇️ (gdb) next
 👉 your token is 2A31L79asukciNyi8uppkEuSx

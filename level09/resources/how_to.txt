@@ -1,10 +1,16 @@
-./level09 "aaaaa"
+🔻 Analyze
+⬇️ ./level09 "aaaaaaaa"
 
-xxd -p token | sed 's/../& /g'
-xxd -p token | sed 's/../&_/g' | xargs python -c "import sys;print(sys.argv[1])"
-xxd -p token | sed 's/../&_/g' | xargs python -c "import sys;print(''.join([chr(int(el, 16) - idx) for idx, el in enumerate(sys.argv[1].split('_')[:-2])]))"
 
-========
+🔻 Before hack
+🌟 python_one_line src: https://stackoverflow.com/a/35651859
+⬇️ python -c $'import os\nimport time\nwhile True:\n\tprint("ok")\n\ttime.sleep(1)\n'
 
-xxd -p token | sed 's/../&_/g' | xargs python -c "import sys;print(''.join([chr(int(el, 16) - idx) for idx, el in enumerate(sys.argv[1].split('_')[:-2])]))"
-su flag09 -c getflag
+
+🔻 Hack
+⬇️ xxd -p token
+⬇️ xxd -p token | sed 's/../&_/g'
+⬇️ xxd -p token | sed 's/../&_/g' | xargs python -c $'import sys\nprint("".join([chr(int(el, 16) - idx) for idx, el in enumerate(sys.argv[1].split("_")[:-2])]))'
+⬇️ su flag09 ↪️ f3iji1ju5yuevaus41q1afiuq
+⬇️ getflag
+👉 Check flag.Here is your token : s5cAJpM8ev6XHw998pRWG728z

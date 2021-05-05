@@ -1,6 +1,0 @@
-Open virtualbox.
-1. Add new virtual debian with name show_crash_42
-2. List of virtuals > show_crash_42 > Right click > Настройки > Носители > IDE > add scr/ShowCrash.iso
-3. Start VM (can help this link https://apple.stackexchange.com/a/410545)
-4. Login and ifcongif -> 10.0.2.15
-5. ssh level00@192.168.0.16 -p 4242

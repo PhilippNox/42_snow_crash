@@ -1,20 +1,22 @@
-cat /etc/passwd
-  flag01:42hDRfypTqqnw:3001:3001::/home/flag/flag01:/bin/bash
+🔻 Hack
+➡️ terminal_1
+⬇️ cat /etc/passwd | grep flag01
+👉 42hDRfypTqqnw
 
-run new vm
-sudo adduser foo
-sudo usermod -aG sudo foo
-ifcongig
+⬇️ run new vm
+➡️ terminal_vm
+⬇️ sudo adduser foo
+⬇️ sudo usermod -aG sudo foo
+⬇️ ifcongig
 
-ssh foo@192.168.0.15
-sudo apt-get install john -y
+➡️ terminal_2
+⬇️ ssh foo@192.168.0.15
+⬇️ sudo apt-get install john -y
+⬇️ echo '42hDRfypTqqnw' > to_crack
+⬇️ john --show to_crack
+👉 abcdefg
 
-echo '42hDRfypTqqnw' > to_crack
-john --show to_crack
-  abcdefg
-
-su flag01
-  abcdefg
-
-getflag
-f2av5il02puano7naaf6adaaf
+➡️ terminal_1
+⬇️ su flag01 ↪️ abcdefg
+⬇️ getflag
+👉 Check flag.Here is your token : f2av5il02puano7naaf6adaaf

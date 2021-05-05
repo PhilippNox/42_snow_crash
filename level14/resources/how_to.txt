@@ -6,8 +6,8 @@
 ⬇️ (gdb) b *0x08048946 ℹ️ <+0>
 ⬇️ (gdb) b *0x0804898e ℹ️ <+72> line after ptrace
 ⬇️ (gdb) b *0x08048b02 ℹ️ <+444> line after getuid
-⬇️ (gdb) run
 
+⬇️ (gdb) run
 ⬇️ (gdb) print $eax
 
 ⬇️ (gdb) next
@@ -19,4 +19,7 @@
 ⬇️ (gdb) set $eax = 3014
 
 ⬇️ (gdb) next
-👉 7QiHafiNa3HVozsaXkawuYrTstxbpABHD8CPnHJ
+👉 Check flag.Here is your token : 7QiHafiNa3HVozsaXkawuYrTstxbpABHD8CPnHJ
+
+⬇️ su flag14 ↪️ 7QiHafiNa3HVozsaXkawuYrTstxbpABHD8CPnHJ
+👉 Congratulation. Type getflag to get the key and send it to me the owner of this livecd :)

