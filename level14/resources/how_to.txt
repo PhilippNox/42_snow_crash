@@ -1,25 +1,31 @@
-🔻 Hack
-⬇️ cat /etc/passwd
-⬇️ gdb getflag
-⬇️ (gdb) disass main
-⬇️ (gdb) set disassemble-next-line on
-⬇️ (gdb) b *0x08048946 ℹ️ <+0>
-⬇️ (gdb) b *0x0804898e ℹ️ <+72> line after ptrace
-⬇️ (gdb) b *0x08048b02 ℹ️ <+444> line after getuid
-
-⬇️ (gdb) run
-⬇️ (gdb) print $eax
-
-⬇️ (gdb) next
-⬇️ (gdb) print $eax
-⬇️ (gdb) set $eax = 0
-
-⬇️ (gdb) next
-⬇️ (gdb) print $eax
-⬇️ (gdb) set $eax = 3014
-
-⬇️ (gdb) next
-👉 Check flag.Here is your token : 7QiHafiNa3HVozsaXkawuYrTstxbpABHD8CPnHJ
-
-⬇️ su flag14 ↪️ 7QiHafiNa3HVozsaXkawuYrTstxbpABHD8CPnHJ
-👉 Congratulation. Type getflag to get the key and send it to me the owner of this livecd :)
++ ---- 🔻 Hack ----
+|
+|   ssh level14@$SNOW_CRASH_IP -p 4242
+|   └ 2A31L79asukciNyi8uppkEuSx
+|   cat /etc/passwd
+|   👉 3014
+|   gdb getflag
+|   (gdb) disass main
+|   (gdb) set disassemble-next-line on
+|   (gdb) b *0x08048946 ℹ️ <+0>
+|   (gdb) b *0x0804898e ℹ️ <+72> line after ptrace
+|   (gdb) b *0x08048b02 ℹ️ <+444> line after getuid
+|
+|   (gdb) run
+|   (gdb) print $eax
+|
+|   (gdb) next
+|   (gdb) print $eax
+|   (gdb) set $eax = 0
+|
+|   (gdb) next
+|   (gdb) print $eax
+|   (gdb) set $eax = 3014
+|
+|   (gdb) next
+|   👉 Check flag.Here is your token : 7QiHafiNa3HVozsaXkawuYrTstxbpABHD8CPnHJ
+|
+|   su flag14
+|   └ 7QiHafiNa3HVozsaXkawuYrTstxbpABHD8CPnHJ
+|   👉 Congratulation. Type getflag to get the key and send it to me the owner of this livecd :)
+|

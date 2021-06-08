@@ -1,12 +1,16 @@
-🔻 Hack
-⬇️ ltrace ./level13
-⬇️ gdb level13
-⬇️ (gdb) set disassemble-next-line on
-⬇️ (gdb) disass main
-⬇️ (gdb) b *0x0804859a ℹ️ <+14> line with cmp (compare)
-⬇️ (gdb) run
-⬇️ (gdb) disass main
-⬇️ (gdb) set $eax = 0x1092
-⬇️ (gdb) next
-⬇️ (gdb) next
-👉 your token is 2A31L79asukciNyi8uppkEuSx
++ ---- 🔻 Hack ----
+|
+|   ssh level13@$SNOW_CRASH_IP -p 4242
+|   └ g1qKMiRpXf53AWhDaU7FEkczr
+|   ltrace ./level13
+|   gdb level13
+|   (gdb) set disassemble-next-line on
+|   (gdb) disass main
+|   (gdb) b *0x0804859a ℹ️ <+14> line with cmp (compare)
+|   (gdb) run
+|   (gdb) disass main
+|   (gdb) set $eax = 0x1092
+|   (gdb) next
+|   (gdb) next
+|   👉 your token is 2A31L79asukciNyi8uppkEuSx
+|

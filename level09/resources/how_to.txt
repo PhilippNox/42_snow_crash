@@ -1,16 +1,26 @@
-🔻 Analyze
-⬇️ ./level09 "aaaaaaaa"
++ ---- 🔻 Analyze ----
+|
+|   ./level09 "aaaaaaaa"
+|
 
 
-🔻 Before hack
-🌟 python_one_line src: https://stackoverflow.com/a/35651859
-⬇️ python -c $'import os\nimport time\nwhile True:\n\tprint("ok")\n\ttime.sleep(1)\n'
++ ---- 🔻 Before hack ----
+|
+|   python_one_line src: https://stackoverflow.com/a/35651859
+|   python -c $'import os\nimport time\nwhile True:\n\tprint("ok")\n\ttime.sleep(1)\n'
+|
 
 
-🔻 Hack
-⬇️ xxd -p token
-⬇️ xxd -p token | sed 's/../&_/g'
-⬇️ xxd -p token | sed 's/../&_/g' | xargs python -c $'import sys\nprint("".join([chr(int(el, 16) - idx) for idx, el in enumerate(sys.argv[1].split("_")[:-2])]))'
-⬇️ su flag09 ↪️ f3iji1ju5yuevaus41q1afiuq
-⬇️ getflag
-👉 Check flag.Here is your token : s5cAJpM8ev6XHw998pRWG728z
++ ---- 🔻 Hack -------
+|
+|   ssh level09@$SNOW_CRASH_IP -p 4242
+|   └ 25749xKZ8L7DkSCwJkT9dyv6f
+|   xxd -p token
+|   xxd -p token | sed 's/../&_/g'
+|   xxd -p token | sed 's/../&_/g' | xargs python -c $'import sys\nprint("".join([chr(int(el, 16) - idx) for idx, el in enumerate(sys.argv[1].split("_")[:-2])]))'
+|   👉 f3iji1ju5yuevaus41q1afiuq
+|   su flag09
+|   └ f3iji1ju5yuevaus41q1afiuq
+|   getflag
+|   👉 Check flag.Here is your token : s5cAJpM8ev6XHw998pRWG728z
+|

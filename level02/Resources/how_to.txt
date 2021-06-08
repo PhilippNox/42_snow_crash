@@ -1,27 +1,40 @@
-🔻 Analyze
-➡️ terminal_1 (ssh snow_crash)
-⬇️ ls
-👉 level02.pcap
-⬇️ tcpdump -qns 0 -X -r level02.pcap
++ ---- 🔻 Analyze ----
+|
+|   ls
+|   level02.pcap
+|   tcpdump -qns 0 -X -r level02.pcap
+|
 
 
-🔻 Hack
-➡️ terminal_2 (local)
-⬇️ cd ~/Desktop
-⬇️ scp -P 4242 level02@192.168.0.xx:/home/user/level02/level02.pcap ~/
-⬇️ enter password: f2av5il02puano7naaf6adaaf
-⬇️ chmod +r level02.pcap
-⬇️ download and install https://www.wireshark.org
-⬇️ wireshark level02.pcap
-
-➡️ wireshark
-⬇️ sort by frame
-⬇️ sort by source
-⬇️ check data in frames
-⬇️ collect data (ascii chars) after frame 43 with source 59.233.235.218
-👉 ft_waNDReL0L
-
-➡️ terminal_1 (ssh snow_crash)
-⬇️ su flag02 ↪️ ft_waNDReL0L
-⬇️ getflag
-👉 Check flag.Here is your token : kooda2puivaav1idi4f57q8iq
++ ---- 🔻 Hack -------
+|
+|   + ---- terminal ------
+|   |
+|   |   cd ~/Desktop
+|   |   scp -P 4242 level02@192.168.0.xx:/home/user/level02/level02.pcap ~/
+|   |   └ f2av5il02puano7naaf6adaaf
+|   |   chmod +r level02.pcap
+|   |   download and install https://www.wireshark.org
+|   |   wireshark level02.pcap
+|
+|
+|   + ---- wireshark -----
+|   |
+|   |   sort by frame
+|   |   sort by source
+|   |   check data in frames
+|   |   collect data (bytes of ascii chars) after frame 43 with source 59.233.235.218
+|   |   👉 ft_waNDReL0L
+|   |
+|
+|
+|   + ---- terminal ------
+|   |
+|   |   ssh level02@$SNOW_CRASH_IP -p 4242
+|   |   └ f2av5il02puano7naaf6adaaf
+|   |   su flag02
+|   |   └ ft_waNDReL0L
+|   |   getflag
+|   |   👉 Check flag.Here is your token : kooda2puivaav1idi4f57q8iq
+|   |
+|

